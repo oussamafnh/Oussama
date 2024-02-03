@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.sec1 {
+    font-family: 'Bebas Neue';
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color1);
+}
+
+.sec1 .firstsec {
+    width: 88%;
+    margin-left: 6%;
+    margin-right: 6%;
+    color: var(--color2);
+    font-size: 3vh;
+}
+
+.sec1 .firstsec span {
+    color: var(--color3);
+}
+
+.sec1 .firstsec svg {
+    margin-top: 16vh;
+    height: 2.1vh;
+    margin-right: 1vw;
+}
+
+
+
+.sec1 .content {
+    width: 88%;
+    height: auto;
+    margin-left: 6%;
+    margin-right: 6%;
+    display: flex;
+}
+
+
+
+
+
+/* PARAGRAPH */
+
+
+
+
+
+.sec1 .content .txt-content p:nth-child(1) {
+    color: var(--color2);
+    font-size: 11.5vh;
+    margin-bottom: 3vh;
+}
+
+.sec1 .content .txt-content p:nth-child(2) {
+    color: var(--color2);
+    font-size: 5vh;
+    word-spacing: 1.1vw;
+    margin-bottom: 4vh;
+}
+
+.sec1 .content .txt-content p:nth-child(3) {
+    color: var(--color2);
+    font-size: 4.77vh;
+    /* word-spacing: 0.92vw; */
+}
+
+
+
+
+
+
+/* dicoration under OUSSAMA FANNAH */
+
+
+.fancy {
+    position: relative;
+    white-space: nowrap;
+
+    &:after {
+        --deco-height: 2vh;
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: calc(var(--deco-height) * 0.325);
+        height: var(--deco-height);
+        background-image: url("data:image/svg+xml,%3Csvg width='100' height='64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23a)'%3E%3Cpath d='M-17 30.5C-1 22 72-4 54 13 37.9 28.2-2.5 57.5 16 55.5s72-29 104-40' stroke='%23EB5E28' stroke-width='10'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h100v64H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+        background-size: auto 100%;
+        background-repeat: round;
+        background-position: 0em;
+    }
+
+    z-index: 1000;
+}
+
+
+
+
+
+
+
+
+
+/* BUTTONS */
+
+.sec1 .content .txt-content .buttons {
+    margin-top: -5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+
+
+.sec1 .content .txt-content .buttons button {
+    margin-top: 10vh;
+    height: 9vh;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color3);
+    border: none;
+    border: var(--color3) 2px solid;
+    /* border-radius: 5px; */
+    /* box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15); */
+}
+
+.sec1 .content .txt-content .buttons .noselect1 {
+    width: 51vh;
+}
+
+.sec1 .content .txt-content .buttons .noselect2 {
+    width: 33vh;
+}
+
+.sec1 .content .txt-content .buttons button,
+.sec1 .content .txt-content .buttons button span {
+    transition: 200ms;
+}
+
+.sec1 .content .txt-content .buttons button .text {
+    color: #040D12;
+    font-weight: bold;
+    font-size: 2.3vh;
+}
+
+.sec1 .content .txt-content .buttons .noselect1 .text {
+    width: 33vh;
+}
+
+.sec1 .content .txt-content .buttons .noselect2 .text {
+    width: 20vh;
+}
+
+.sec1 .content .txt-content .buttons button .icon {
+    position: static;
+    /* border-left: 1px solid #040D12; */
+    height: 9vh;
+    width: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec1 .content .txt-content .buttons button svg {
+    width: 2.3vh;
+    fill: #000000;
+}
+
+.sec1 .content .txt-content .buttons button:hover svg path {
+    fill: #ffffff;
+}
+
+
+.sec1 .content .txt-content .buttons button:hover {
+    background: rgb(0, 0, 0)
+}
+
+.sec1 .content .txt-content .buttons button:hover .text {
+    color: transparent;
+}
+
+.sec1 .content .txt-content .buttons button:hover .icon {
+    width: 150px;
+}
+
+.sec1 .content .txt-content .buttons .noselect1:hover .icon {
+    /* transform: translateX(-100.5px); */
+    margin-right: 36%;
+}
+
+.sec1 .content .txt-content .buttons .noselect2:hover .icon {
+    /* transform: translateX(-60.5px); */
+    margin-right: 32%;
+
+}
+
+.sec1 .content .txt-content .buttons button:focus {
+    outline: none;
+}
+
+.sec1 .content .txt-content .buttons button:active .icon svg {
+    transform: scale(0.8);
+}
+
+
+
+.svgimage svg {
+    position: absolute;
+    margin-top: 7vh;
+    right: 3%;
+    z-index: 1001;
+}
+
+
+@media only screen and (min-width: 1290px) {
+    .svgimage svg {
+        right: 6%;
+    }
+}

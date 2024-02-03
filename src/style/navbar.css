@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 .navbar {
     width: 100%;
     position: fixed;
-    font-family: 'Roboto Mono', monospace;
+    /* font-family: 'Roboto Mono', monospace; */
+    /* font-family: "Josefin Sans", sans-serif; */
+    font-family: 'Bebas Neue';
     height: 10vh;
     top: 0;
+    z-index: 1010;
 }
 
 
@@ -25,9 +31,7 @@
     padding: 1.5vh;
 }
 
-.navbar .nav-container a:hover {
-    font-weight: bolder;
-}
+
 
 .nav-container {
     display: block;
@@ -60,14 +64,15 @@
     position: relative;
     margin-right: -0.5%;
     top: 17px;
-    right: 0px;
+    right: 6%;
     z-index: 2;
+    cursor: pointer;
 }
 
 .hamburger:before,
 .hamburger:after,
 .hamburger div {
-    background:  var(--color3);
+    background: var(--color3);
     content: "";
     display: block;
     height: 3px;
@@ -83,7 +88,7 @@
     height: 4px;
     width: 100%;
     border-radius: 10px;
-    background:  var(--color3);
+    background: var(--color3);
 }
 
 .nav-container .hamburger-lines .line1 {
@@ -111,7 +116,7 @@
 
 .navbar .menu-items {
     padding-top: 17vh;
-    background-color:  var(--color1);
+    background-color: var(--color1);
     height: 100vh;
     width: 100vw;
     position: relative;
@@ -120,19 +125,45 @@
     transition: transform 0.5s ease-in-out;
 }
 
+.navbar .open{
+    display: block;
+}
+
+.navbar .close{
+    display: none;
+}
+
 .navbar .menu-items ul {
     position: absolute;
-    margin-left:50%;
+    margin-left: 50%;
     transform: translateX(-50%);
     padding-inline-start: 0px;
 }
 
 .navbar .menu-items li {
     margin-bottom: 2vh;
-    font-size: 4vh;
+    font-size: 6vh;
     font-weight: 500;
+    text-align: center;
+
 }
 
+.navbar .menu-items li a {
+    color: var(--color2);
+    font-size: 4vh;
+    transform: translate(-50%, -50%);
+    background-image: linear-gradient(#EB5E28, #EB5E28);
+    background-size: 100% 0px;
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    transition: background-size .7s, background-position .5s ease-in-out;
+}
+
+.navbar .menu-items li a:hover {
+    background-size: 100% 100%;
+    background-position: 0% 100%;
+    transition: background-position .7s, background-size .5s ease-in-out;
+}
 
 .montion {
     display: flex;
@@ -155,23 +186,27 @@
     position: absolute;
     float: left;
     top: 1vh;
-    left: 3vh;
-    color:  var(--color3);
+    left: 6%;
+    color: var(--color3);
     z-index: 1002;
 }
 
-.logo .logoImage{
+.logo .logoImage {
     width: 10vw;
     height: auto;
 }
 
 
 @media only screen and (max-width: 600px) {
+    .hamburger {
+        right: 0vw;
+    }
     .logo {
         top: 1.5vh;
         left: 3vh;
     }
-    .logo .logoImage{
+
+    .logo .logoImage {
         width: 30vw;
         height: auto;
     }
@@ -183,7 +218,7 @@
 }
 
 .nav-container input[type="checkbox"]:checked~.navbar {
-    background-color:  var(--color3);
+    background-color: var(--color3);
 }
 
 
@@ -198,4 +233,182 @@
 
 .nav-container input[type="checkbox"]:checked~.hamburger:after {
     transform: translateY(-7px) rotate(-135deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.logo .container {
+    width: 100%;
+    display: flex;
+}
+
+.logo .container .box {
+    width: auto;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+
+.logo .container .box .title {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.logo .container .box .title .block {
+    width: 0%;
+    height: inherit;
+    background: var(--color3);
+    position: absolute;
+    animation: mainBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
+    display: flex;
+}
+
+.logo .container .box svg {
+    /* font-size: 32px; */
+    -webkit-animation: mainFadeIn 2s forwards;
+    -o-animation: mainFadeIn 2s forwards;
+    animation: mainFadeIn 2s forwards;
+    animation-delay: 1.6s;
+    opacity: 0;
+    display: flex;
+    align-items: baseline;
+    position: relative;
+
+}
+
+
+
+
+@keyframes mainBlock {
+    0% {
+        width: 0%;
+        left: 0;
+
+    }
+
+    50% {
+        width: 100%;
+        left: 0;
+
+    }
+
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+
+@keyframes secBlock {
+    0% {
+        width: 0%;
+        left: 0;
+
+    }
+
+    50% {
+        width: 100%;
+        left: 0;
+
+    }
+
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+
+@keyframes mainFadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes popIn {
+    0% {
+        width: 0px;
+        height: 0px;
+        background: #e9d856;
+        border: 0px solid #ddd;
+        opacity: 0;
+    }
+
+    50% {
+        width: 10px;
+        height: 10px;
+        background: #e9d856;
+        opacity: 1;
+        bottom: 45px;
+    }
+
+    65% {
+        width: 7px;
+        height: 7px;
+        bottom: 0px;
+        width: 15px
+    }
+
+    80% {
+        width: 10px;
+        height: 10px;
+        bottom: 20px
+    }
+
+    100% {
+        width: 7px;
+        height: 7px;
+        background: #e9d856;
+        border: 0px solid #222;
+        bottom: 13px;
+
+    }
+}
+
+@keyframes secFadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
 }
