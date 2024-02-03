@@ -21,7 +21,7 @@
 }
 
 .sec3 .title p {
-    color: var(--color2);
+    color: var(--color5);
     font-size: 4vh;
     text-align: center;
 }
@@ -31,6 +31,8 @@
 .sec3 .content {
     height: 80vh;
     width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
 .sec3 .content .leftside {
@@ -170,160 +172,47 @@
 
 
 
-
-
-
-
-
-/* 
-
-
-
-.title .container {
-    width: 100%;
-    display: flex;
-}
-
-.title .container .box {
+.rightside{
     width: auto;
-    height: auto;
-    position: relative;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-
-
+    color: var(--color5);
+    font-size: 3vh;
 }
 
-.title .container .box .title {
-    width: 100%;
-    position: relative;
+.rightside .contactinfos{
+    margin-top: 6vh;
+    margin-left: 10vw;
+}
+
+.rightside .contactinfos div{
     display: flex;
+    flex-direction: row;
+    gap: 0.6vw;
     align-items: center;
-    height: 50px;
 }
 
-.title .container .box .title .block {
-    width: 0%;
-    height: inherit;
-    background: var(--color3);
-    position: absolute;
-    animation: mainBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
+.rightside .contactinfos div svg{
+    height: 3vh;
+    width: auto;
+}
+
+.rightside .contactinfos div svg path{
+    fill: var(--color5);
+}
+
+.rightside .social{
+    margin-top: 34vh;
+    margin-left: 10vw;
+}
+
+.rightside .social .socials{
     display: flex;
-}
-
-.title .container .box h1 {
-    color: #fff;
-    font-size: 32px;
-    -webkit-animation: mainFadeIn 2s forwards;
-    -o-animation: mainFadeIn 2s forwards;
-    animation: mainFadeIn 2s forwards;
-    animation-delay: 1.6s;
-    opacity: 0;
-    display: flex;
-    align-items: baseline;
-    position: relative;
-
+    flex-direction: row;
+    gap: 1vw;
 }
 
 
-
-
-@keyframes mainBlock {
-    0% {
-        width: 0%;
-        left: 0;
-
-    }
-
-    50% {
-        width: 100%;
-        left: 0;
-
-    }
-
-    100% {
-        width: 0;
-        left: 100%;
-    }
+.rightside .social .socials svg .Xpath {
+    fill: var(--color5);
 }
-
-@keyframes secBlock {
-    0% {
-        width: 0%;
-        left: 0;
-
-    }
-
-    50% {
-        width: 100%;
-        left: 0;
-
-    }
-
-    100% {
-        width: 0;
-        left: 100%;
-    }
-}
-
-@keyframes mainFadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-
-@keyframes popIn {
-    0% {
-        width: 0px;
-        height: 0px;
-        background: #e9d856;
-        border: 0px solid #ddd;
-        opacity: 0;
-    }
-
-    50% {
-        width: 10px;
-        height: 10px;
-        background: #e9d856;
-        opacity: 1;
-        bottom: 45px;
-    }
-
-    65% {
-        width: 7px;
-        height: 7px;
-        bottom: 0px;
-        width: 15px
-    }
-
-    80% {
-        width: 10px;
-        height: 10px;
-        bottom: 20px
-    }
-
-    100% {
-        width: 7px;
-        height: 7px;
-        background: #e9d856;
-        border: 0px solid #222;
-        bottom: 13px;
-
-    }
-}
-
-@keyframes secFadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 0.5;
-    }
-} */

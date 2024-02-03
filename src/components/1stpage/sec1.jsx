@@ -63,3 +63,4 @@ const Sec1 = () => {
 }
 
 export default Sec1
+
