@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import './App.css';
 import Navbar from './components/navbar';
-import Sec1 from './components/1stpage/sec1';
+import Home from './components/1stpage/sec1';
 import ContactForm from './components/1stpage/sec3';
 import Loader from "./components/loader";
+import About from "./components/1stpage/sec2";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -24,7 +25,8 @@ function App() {
         ) : (
           <>
             <Navbar />
-            <Sec1 />
+            <Home />
+            <About />
             <ContactForm />
           </>
 

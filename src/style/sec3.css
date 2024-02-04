@@ -22,8 +22,8 @@
 
 .sec3 .title p {
     color: var(--color5);
-    font-size: 4vh;
-    text-align: center;
+    font-size: 5vh;
+    /* text-align: center; */
 }
 
 
@@ -172,7 +172,7 @@
 
 
 
-.rightside{
+.sec3 .content  .rightside{
     width: auto;
     display: flex;
     flex-direction: column;
@@ -180,39 +180,39 @@
     font-size: 3vh;
 }
 
-.rightside .contactinfos{
+.sec3 .content  .rightside .contactinfos{
     margin-top: 6vh;
     margin-left: 10vw;
 }
 
-.rightside .contactinfos div{
+.sec3 .content  .rightside .contactinfos div{
     display: flex;
     flex-direction: row;
     gap: 0.6vw;
     align-items: center;
 }
 
-.rightside .contactinfos div svg{
+.sec3 .content  .rightside .contactinfos div svg{
     height: 3vh;
     width: auto;
 }
 
-.rightside .contactinfos div svg path{
+.sec3 .content  .rightside .contactinfos div svg path{
     fill: var(--color5);
 }
 
-.rightside .social{
+.sec3 .content  .rightside .social{
     margin-top: 34vh;
     margin-left: 10vw;
 }
 
-.rightside .social .socials{
+.sec3 .content  .rightside .social .socials{
     display: flex;
     flex-direction: row;
     gap: 1vw;
 }
 
 
-.rightside .social .socials svg .Xpath {
+.sec3 .content  .rightside .social .socials svg .Xpath {
     fill: var(--color5);
 }

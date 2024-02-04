@@ -123,6 +123,7 @@
     flex-direction: row;
     justify-content: flex-start;
     gap: 10px;
+
 }
 
 
@@ -137,6 +138,8 @@
     background: var(--color3);
     border: none;
     border: var(--color3) 2px solid;
+    /* font-family: 'Bebas Neue'; */
+    /* letter-spacing: 0.2vw; */
     /* border-radius: 5px; */
     /* box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15); */
 }

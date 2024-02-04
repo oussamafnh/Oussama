@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+.about {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color1);
+    font-family: 'Bebas Neue';
+
+}
+
+.aboutcontainer {
+    width: 88%;
+    margin-left: 6%;
+    margin-right: 6%;
+    height: auto;
+    /* margin-top: 10vh; */
+
+}
+
+.aboutcontainer .title {
+    padding-top: 7vh;
+    font-size: 5vh;
+    /* text-align: center; */
+    color: var(--color5);
+}
+
+
+.aboutcontainer .title p {
+
+    margin-top: 0vh;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.aboutcontainer .content {
+    padding-top: 4vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.aboutcontainer .content  .leftside {
+    width: 40%;
+}
+
+.aboutcontainer .content  .leftside img {
+    height: 80vh;
+    width: auto;
+}
+
+
+
+.aboutcontainer .content .rightside {
+    width: 60%;
+    color: var(--color5);
+    font-size: 3vh;
+}
+
+.aboutcontainer .content .rightside .infos {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+
+.aboutcontainer .content .rightside .infos .a {
+    position: absolute;
+    left: 30%;
+}
+
+.aboutcontainer .content .rightside .infos .a svg {
+    height: 2vh;
+    width: auto;
+}
+
+.aboutcontainer .content .rightside .infos p {
+    font-size: 2.8vh;
+}

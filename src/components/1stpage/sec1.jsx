@@ -1,12 +1,12 @@
 import React, { useRef, useEffect, useState } from "react";
-import image from '../../assets/imgs/image.png';
+import { motion, useScroll, useTransform, useAnimation } from "framer-motion";
 import { Homeimg } from '../../assets/svgs/homeimg';
 import '../../style/sec1.css';
-import { motion, useScroll, useTransform, useAnimation } from "framer-motion";
+import Morocco from "../../assets/svgs/flags/morocco";
 
 
 
-const Sec1 = () => {
+const Home = () => {
 
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -21,13 +21,13 @@ const Sec1 = () => {
     <>
       <motion.div
         id="home"
-        ref={ref}
         className={`sec1`}
+        ref={ref}
         style={{
           opacity: scalP,
         }}>
         <div className="firstsec">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g data-name="46.Navigation"><path fill='white' d="M18 23.447 14.7 20a6 6 0 1 1 6.6 0zM18 11a3.99 3.99 0 0 0-2.121 7.376l.189.156L18 20.553l2.121-2.177A3.99 3.99 0 0 0 18 11z" /><path fill='white' d="M17 14h2v2h-2z" /><path fill='white' d="M12 24A12 12 0 1 1 23.182 7.636l-1.864.728a9.995 9.995 0 1 0-7.5 13.471l.362 1.967A12.029 12.029 0 0 1 12 24z" /><path fill='white' d="M2 15h9v2H2zM2 7h9v2H2zM11 1h2v8h-2z" /><path fill='white' d="M6 2h2v20H6zM16 2h2v5h-2z" /></g></svg>Based in <span>MOROCCO <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600"><path fill="#c1272d" d="M900 0H0v600h900z" /><path d="M450 224.315l-44.467 136.87 116.401-84.559h-143.87l116.403 84.559z" fill="none" stroke="#006233" stroke-width="14.63" /></svg></span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g data-name="46.Navigation"><path fill='white' d="M18 23.447 14.7 20a6 6 0 1 1 6.6 0zM18 11a3.99 3.99 0 0 0-2.121 7.376l.189.156L18 20.553l2.121-2.177A3.99 3.99 0 0 0 18 11z" /><path fill='white' d="M17 14h2v2h-2z" /><path fill='white' d="M12 24A12 12 0 1 1 23.182 7.636l-1.864.728a9.995 9.995 0 1 0-7.5 13.471l.362 1.967A12.029 12.029 0 0 1 12 24z" /><path fill='white' d="M2 15h9v2H2zM2 7h9v2H2zM11 1h2v8h-2z" /><path fill='white' d="M6 2h2v20H6zM16 2h2v5h-2z" /></g></svg>Based in <span>MOROCCO <Morocco /> </span>
         </div>
         <div className="content">
           <div className="txt-content">
@@ -62,5 +62,5 @@ const Sec1 = () => {
   )
 }
 
-export default Sec1
+export default Home
 
