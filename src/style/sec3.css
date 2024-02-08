@@ -43,11 +43,12 @@
 }
 
 .sec3 .content .leftside .form-container {
+    margin-top: 7vh;
     width: 100%;
-    background: linear-gradient(#000000, #000000) padding-box,
+    /* background: linear-gradient(#000000, #000000) padding-box,
         linear-gradient(145deg, transparent 50%, #EB5E28, #403D39) border-box;
-    border: 0.3vh solid transparent;
-    padding: 6vh 4vw;
+    border: 0.3vh solid transparent; */
+    /* padding: 6vh 4vw; */
     font-size: 2vh;
     font-family: inherit;
     color: white;
@@ -55,7 +56,7 @@
     flex-direction: column;
     box-sizing: border-box;
     background-size: 200% 100%;
-    animation: gradient 5s ease infinite;
+    /* animation: gradient 5s ease infinite; */
 }
 
 @keyframes gradient {
@@ -101,11 +102,12 @@
 
 .sec3 .content .leftside .form-container .form-group input {
     width: 100%;
-    padding: 2vh 1vw;
+    padding: 3vh 1vw;
     color: var(--color5);
     font-family: inherit;
     background-color: transparent;
     border: 0.1vh solid var(--color5);
+
 }
 
 .sec3 .content .leftside .form-container .form-group textarea {
@@ -172,7 +174,7 @@
 
 
 
-.sec3 .content  .rightside{
+.sec3 .content .rightside {
     width: auto;
     display: flex;
     flex-direction: column;
@@ -180,39 +182,39 @@
     font-size: 3vh;
 }
 
-.sec3 .content  .rightside .contactinfos{
+.sec3 .content .rightside .contactinfos {
     margin-top: 6vh;
     margin-left: 10vw;
 }
 
-.sec3 .content  .rightside .contactinfos div{
+.sec3 .content .rightside .contactinfos div {
     display: flex;
     flex-direction: row;
     gap: 0.6vw;
     align-items: center;
 }
 
-.sec3 .content  .rightside .contactinfos div svg{
+.sec3 .content .rightside .contactinfos div svg {
     height: 3vh;
     width: auto;
 }
 
-.sec3 .content  .rightside .contactinfos div svg path{
+.sec3 .content .rightside .contactinfos div svg path {
     fill: var(--color5);
 }
 
-.sec3 .content  .rightside .social{
+.sec3 .content .rightside .social {
     margin-top: 34vh;
     margin-left: 10vw;
 }
 
-.sec3 .content  .rightside .social .socials{
+.sec3 .content .rightside .social .socials {
     display: flex;
     flex-direction: row;
     gap: 1vw;
 }
 
 
-.sec3 .content  .rightside .social .socials svg .Xpath {
+.sec3 .content .rightside .social .socials svg .Xpath {
     fill: var(--color5);
 }
