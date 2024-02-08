@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Oussama/static/css/main.615b0e61.css",
+    "main.css": "/Oussama/static/css/main.93034927.css",
     "main.js": "/Oussama/static/js/main.21fc7d44.js",
     "static/js/787.7da95b79.chunk.js": "/Oussama/static/js/787.7da95b79.chunk.js",
     "static/media/img1.jpg": "/Oussama/static/media/img1.5a99934b8e1e9890f703.jpg",
     "index.html": "/Oussama/index.html",
-    "main.615b0e61.css.map": "/Oussama/static/css/main.615b0e61.css.map",
+    "main.93034927.css.map": "/Oussama/static/css/main.93034927.css.map",
     "main.21fc7d44.js.map": "/Oussama/static/js/main.21fc7d44.js.map",
     "787.7da95b79.chunk.js.map": "/Oussama/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.615b0e61.css",
+    "static/css/main.93034927.css",
     "static/js/main.21fc7d44.js"
   ]
 }
