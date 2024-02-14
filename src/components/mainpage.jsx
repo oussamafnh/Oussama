@@ -9,7 +9,7 @@ const Mainpage = () => {
     <>
       <Home />
       <Work />
-      <About />
+      {/* <About /> */}
       <ContactForm />
     </>
   )

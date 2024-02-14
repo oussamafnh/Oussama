@@ -19,56 +19,58 @@ const WorkShowcase = () => {
     };
 
     return (
-        <motion.div className="work" id='showcase' ref={ref}
-            style={{
-                opacity: scalP,
-            }}>
-            <div className="title">
-                <p>WORKS SHOWCASE :</p>
-            </div>
-            <div className="work-showcase">
-                <div className="project-list">
-                    {worksData.map((project) => (
-                        <div
-                            key={project.title}
-                            className="project-item"
-                            onMouseEnter={() => handleProjectHover(project)}
-                            onMouseLeave={() => handleProjectHover(null)}
-                        >
-                            {project.title}
-                            <Link to={`/${project.liltitle.toLowerCase()}`} className="learn-more">
-                                <span className="circle" aria-hidden="true">
-                                    <span className="icon arrow"></span>
-                                </span>
-                                <span className="button-text">Get Details</span>
-                            </Link>
-                        </div>
-                    ))}
+        <>
+            <motion.div className="work" id='showcase' ref={ref}
+                style={{
+                    opacity: scalP,
+                }}>
+                <div className="title">
+                    <p>WORKS SHOWCASE :</p>
                 </div>
+                <div className="work-showcase">
+                    <div className="project-list">
+                        {worksData.map((project) => (
+                            <div
+                                key={project.title}
+                                className="project-item"
+                                onMouseEnter={() => handleProjectHover(project)}
+                                onMouseLeave={() => handleProjectHover(null)}
+                            >
+                                {project.title}
+                                <Link to={`/${project.liltitle.toLowerCase()}`} className="learn-more">
+                                    <span className="circle" aria-hidden="true">
+                                        <span className="icon arrow"></span>
+                                    </span>
+                                    <span className="button-text">Get Details</span>
+                                </Link>
+                            </div>
+                        ))}
+                    </div>
 
-                <motion.div className="project-details"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 0.5 }}
-                >
-                    {selectedProject && (
-                        <>
-                            <h2 className="detail-title">{selectedProject.title}</h2>
-                            <p className="detail-languages">{selectedProject.languages.join(', ')}</p>
-                            <motion.img
-                                src={selectedProject.logo}
-                                alt={selectedProject.title}
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                exit={{ opacity: 0 }}
-                                transition={{ duration: 0.5 }}
-                            />
-                        </>
-                    )}
-                </motion.div>
-            </div>
-        </motion.div>
+                    <motion.div className="project-details"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.5 }}
+                    >
+                        {selectedProject && (
+                            <>
+                                <h2 className="detail-title">{selectedProject.title}</h2>
+                                <p className="detail-languages">{selectedProject.languages.join(', ')}</p>
+                                <motion.img
+                                    src={selectedProject.logo}
+                                    alt={selectedProject.title}
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    exit={{ opacity: 0 }}
+                                    transition={{ duration: 0.5 }}
+                                />
+                            </>
+                        )}
+                    </motion.div>
+                </div>
+            </motion.div>
+        </>
     );
 };
 

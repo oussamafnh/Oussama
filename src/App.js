@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import Kinet from 'kinet';
 import './App.css';
 import Navbar from './components/navbar';
 import Home from './components/1stpage/sec1';
@@ -6,6 +7,7 @@ import ContactForm from './components/1stpage/sec3';
 import Loader from "./components/loader";
 import About from "./components/1stpage/sec2";
 import RouterPage from "./router";
+
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -15,6 +17,15 @@ function App() {
       setIsLoading(false);
     }, 2500);
   }, []);
+
+
+
+
+
+
+
+
+
   return (
     <div className="App">
       {
@@ -23,9 +34,6 @@ function App() {
         ) : (
           <>
             <Navbar />
-            {/* <Home />
-            <About />
-            <ContactForm /> */}
             <RouterPage />
           </>
 
@@ -36,3 +44,4 @@ function App() {
 }
 
 export default App;
+

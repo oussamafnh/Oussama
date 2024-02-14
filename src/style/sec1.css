@@ -138,10 +138,6 @@
     background: var(--color3);
     border: none;
     border: var(--color3) 2px solid;
-    /* font-family: 'Bebas Neue'; */
-    /* letter-spacing: 0.2vw; */
-    /* border-radius: 5px; */
-    /* box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15); */
 }
 
 .sec1 .content .txt-content .buttons .noselect1 {
@@ -235,5 +231,106 @@
 @media only screen and (min-width: 1290px) {
     .svgimage svg {
         right: 6%;
+    }
+}
+
+
+@media (max-width: 760px) {
+
+    .sec1 .firstsec {
+        width: 92%;
+        margin-left: 4%;
+        margin-right: 4%;
+        color: var(--color2);
+        font-size: 2.5vh;
+        animation: fadein 2s ease;
+    }
+
+    .sec1 .firstsec span {
+        color: var(--color3);
+    }
+
+    .sec1 .firstsec svg {
+        margin-top: 16vh;
+        height: 1.8vh;
+        margin-right: 1vw;
+    }
+
+
+    .sec1 .content {
+        width: 92%;
+        height: auto;
+        margin-left: 4%;
+        margin-right: 4%;
+        display: flex;
+        flex-direction: column;
+        animation: fadein 2s ease;
+    }
+
+
+    .sec1 .content .txt-content p {
+        color: var(--color2);
+        margin-bottom: 3vh;
+    }
+    
+    .sec1 .content .txt-content p:nth-child(1) {
+        font-size: 12.3vw; /* Adjust font size using vw unit */
+    }
+    
+    .sec1 .content .txt-content p:nth-child(2) {
+        font-size: 6.1vw; /* Adjust font size using vw unit */
+        word-spacing: 0.5vw;
+        margin-bottom: 4vh;
+    }
+    
+    .sec1 .content .txt-content p:nth-child(3) {
+        font-size:5.1vw; /* Adjust font size using vw unit */
+    }
+
+    .sec1 .content .txt-content .buttons {
+        margin-top: -5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 2px;
+    }
+
+    .sec1 .content .txt-content .buttons button {
+        margin-top: 1vh;
+        height: 9vh;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: var(--color3);
+        border: none;
+        border: var(--color3) 2px solid;
+    }
+
+    .sec1 .content .txt-content .buttons .noselect1 {
+        margin-top: 10vh;
+        width: 100%;
+
+    }
+
+    .sec1 .content .txt-content .buttons .noselect2 {
+        width: 33vh;
+        width: 100%;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    .svgimage{
+        display: none;
     }
 }
