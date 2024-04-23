@@ -5,9 +5,12 @@ import { LightLogo } from "../assets/svgs/light_logo";
 import { XTwitter } from "../assets/svgs/socials/x";
 import { Linkedin } from "../assets/svgs/socials/linkedin";
 import { Github } from "../assets/svgs/socials/github";
+import LanguageSwitcher from "./languageSwitcher";
+import { useTranslation } from 'react-i18next';
 
 
 function Navbar() {
+    const { t } = useTranslation();
     const [menuOpen, setMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -32,7 +35,6 @@ function Navbar() {
         <div className="navbar">
             <div className="container nav-container">
                 <div className="logo">
-                    {/* <LightLogo /> */}
                     <div class="container">
                         <div class="box">
 
@@ -43,6 +45,9 @@ function Navbar() {
 
                         </div>
                     </div>
+                </div>
+                <div className="languageswitcher">
+                    <LanguageSwitcher />
                 </div>
                 <input
                     className="checkbox"
@@ -63,24 +68,24 @@ function Navbar() {
                 >
                     <ul>
                         <li>
-                            <motion.a className="menu-link" href="#home" onClick={closeMenu}>HOME</motion.a>
+                            <motion.a className="menu-link" href="#home" onClick={closeMenu}>{t('navbar.HOME')}</motion.a>
                         </li>
                         <li>
                             <motion.a
                                 className="menu-link"
                                 href="#showcase"
                                 onClick={closeMenu}
-                            >SHOWCASE</motion.a>
+                            >{t('navbar.SHOWCASE')}</motion.a>
                         </li>
                         <li>
                             <motion.a
                                 className="menu-link"
                                 href="#about"
                                 onClick={closeMenu}
-                            >ABOUT</motion.a>
+                            >{t('navbar.ABOUT')}</motion.a>
                         </li>
                         <li>
-                            <motion.a className="menu-link" href="#contact" onClick={closeMenu}>CONTACT</motion.a>
+                            <motion.a className="menu-link" href="#contact" onClick={closeMenu}>{t('navbar.CONTACT')}</motion.a>
                         </li>
                     </ul>
                     <div className="montion">

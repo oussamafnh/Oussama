@@ -11,10 +11,14 @@ import Mysql from '../../assets/svgs/languages/mysql';
 import Js from '../../assets/svgs/languages/js';
 import Reactjs from '../../assets/svgs/languages/react';
 import ImageX from "../../assets/imgs/img1.jpg";
+import { useTranslation } from 'react-i18next';
 
 
 
 const About = () => {
+
+    const { t } = useTranslation();
+
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({
         target: ref,
@@ -32,77 +36,45 @@ const About = () => {
             <div className="aboutcontainer">
                 {/* <div className='titleAbout'> <p> ABOUT ME </p> </div> */}
                 <div className="title">
-                    <p>ABOUT ME</p>
+                    <p>{t('about.title')}</p>
                 </div>
                 <div className="content">
 
                     <div className="leftside">
                         <img src={ImageX} alt="Profile" />
                     </div>
-                    {/* <div className="rightside">
-                    <div className="infos">
-                    <p className="q">NAME</p>
-                        <p className='a'>Oussama Fannah</p>
-                        </div>
-                        <div className="infos">
-                        <p className="q">NATIONALITY</p>
-                        <p className='a'>Moroccan</p>
-                        </div>
-                        <div className="infos">
-                        <p className="q">PROFESSION</p>
-                        <p className='a'>Full Stack / BackEnd Developer</p>
-                    </div>
-                    <div className="infos">
-                        <p className="q">EDUCATION</p>
-                        <p className='a'>OFPPT - Vocational School (2Y program)</p>
-                        </div>
-                        <div className="infos">
-                        <p className="q">SKILLS</p>
-                        <p className='a'>JavaScript, React, Node.js, etc.</p>
-                    </div>
-                    <div className="infos">
-                    <p className="q">LANGUAGES</p>
-                    <p className='a'>English, French, Arabic</p>
-                    </div>
-                    <div className="infos">
-                        <p className="q">SUMMARY</p>
-                        <p className='a'>Passionate and dedicated Full Stack / BackEnd Developer with a strong foundation in JavaScript, React, and Node.js. Eager to learn and adapt to new technologies. Enthusiastic about creating innovative solutions and contributing to the tech community.</p>
-                    </div>
-                </div> */}
                     <div className="rightside">
                         <div className="infos">
-                            <p className="q">NAME</p>
-                            <p className='a'>Oussama Fannah</p>
+                            <p className="q">{t('about.question1')}</p>
+                            <p className='a'>{t('about.answer1')}</p>
                         </div>
                         <div className="infos">
-                            <p className="q">NATIONALITY</p>
-                            <p className='a'>
-                                Moroccan <Morocco />
-                            </p>
+                            <p className="q">{t('about.question2')}</p>
+                            <p className='a'>{t('about.answer2')}</p>
                         </div>
                         <div className="infos">
-                            <p className="q">PROFESSION</p>
-                            <p className='a'>Full Stack / BackEnd Developer</p>
+                            <p className="q">{t('about.question3')}</p>
+                            <p className='a'>{t('about.answer3')}</p>
                         </div>
                         <div className="infos">
-                            <p className="q">EDUCATION</p>
-                            <p className='a'>OFPPT - Vocational School (2Y program)</p>
+                        <p className="q">{t('about.question4')}</p>
+                        <p className='a'>{t('about.answer4')}</p>
                         </div>
                         <div className="infos">
-                            <p className="q">SKILLS</p>
+                        <p className="q">{t('about.question5')}</p>
                             <p className='a'>JavaScript <Js /> , React <Reactjs /> , Node.js <Node /> , Php <Php /> , mySQL <Mysql /> , MongoDB <Mongodb /> , etc...</p>
                         </div>
                         <div className="infos">
-                            <p className="q">LANGUAGES</p>
+                        <p className="q">{t('about.question6')}</p>
                             <p className='a'>
-                                English <Uk /> ,
-                                French <France /> ,
-                                Arabic <Morocco />
+                            {t('about.answer61')} <Uk /> ,
+                            {t('about.answer62')} <France /> ,
+                            {t('about.answer63')} <Morocco />
                             </p>
                         </div>
                         <div className="infos">
-                            <p className="q">INTRODUCTION</p>
-                            <p className='a'>Passionate and dedicated Full Stack / BackEnd Developer with a strong foundation in JavaScript, React, and Node.js. Eager to learn and adapt to new technologies. Enthusiastic about creating innovative solutions and contributing to the tech community.</p>
+                            <p className="q">{t('about.question7')}</p>
+                            <p className='a'>{t('about.answer7')}</p>
                         </div>
                     </div>
 

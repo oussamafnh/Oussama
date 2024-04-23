@@ -1,0 +1,48 @@
+{
+    "navbar": {
+        "HOME": "HOME",
+        "SHOWCASE": "SHOWCASE",
+        "ABOUT": "ABOUT",
+        "CONTACT": "CONTACT"
+    },
+    "home": {
+        "based": "Based in",
+        "ma": "MOROCCO",
+        "hi": "Hi, I'm ",
+        "major": "A dedicated Full Stack / BackEnd Developer",
+        "text": "I'm open to new opportunities!  Take a look at my work ",
+        "resume": "Download my resume",
+        "contact": "Contact Me"
+    },
+    "contact": {
+        "title": "Let's work together",
+        "name": "Name",
+        "msg": " Leave  A Message",
+        "send": "Send",
+        "success": "Your message has been received. Have a great day!",
+        "contact": "Connect with me on social media"
+    },
+    "about": {
+        "title": "ABOUT ME",
+        "question1": "NAME",
+        "answer1": "Oussama Fannah",
+        "question2": "NATIONALITY",
+        "answer2": "Moroccan",
+        "question3": "PROFESSION",
+        "answer3": "Full Stack / BackEnd Developer",
+        "question4": "EDUCATION",
+        "answer4": "OFPPT - Vocational School (2Y program)",
+        "question5": "SKILLS",
+        "answer5": "JavaScript, React, Node.js, Php, mySQL, MongoDB, etc...",
+        "question6": "LANGUAGES",
+        "answer61": "English",
+        "answer62": "French",
+        "answer63": "Arabic",
+        "question7": "INTRODUCTION",
+        "answer7": "Passionate and dedicated Full Stack / BackEnd Developer with a strong foundation in JavaScript, React, and Node.js. Eager to learn and adapt to new technologies. Enthusiastic about creating innovative solutions and contributing to the tech community."
+    },
+    "showcase": {
+        "title": "SHOWCASE",
+        "detail": "Get Details"
+    }
+}

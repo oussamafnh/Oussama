@@ -10,9 +10,11 @@
     "@testing-library/user-event": "^13.5.0",
     "framer-motion": "^11.0.3",
     "gsap": "^3.12.5",
+    "i18next": "^23.11.2",
     "kinet": "^2.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-i18next": "^14.1.0",
     "react-router-dom": "^6.22.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
@@ -45,6 +47,7 @@
   },
   "devDependencies": {
     "gh-pages": "^6.1.1",
+    "json-loader": "^0.5.7",
     "resize-observer-polyfill": "^1.5.1"
   }
 }

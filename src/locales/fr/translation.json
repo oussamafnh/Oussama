@@ -1,0 +1,44 @@
+{
+    "navbar": {
+        "HOME": "ACCUEIL",
+        "SHOWCASE": "SHOWCASE",
+        "ABOUT": "À PROPOS",
+        "CONTACT": "CONTACT"
+    },
+    "home": {
+        "based": "Basé au",
+        "ma": "MAROC",
+        "hi": "Salut, C ",
+        "major": "Un développeur Full Stack / BackEnd",
+        "text": "Je suis ouvert à de nouvelles opportunités !",
+        "resume": "Téléchargez Mon CV",
+        "contact": "Contact Moi"
+    },
+    "contact": {
+        "title": "Travaillons ensemble",
+        "name": "Nom",
+        "msg": "Laissez un message",
+        "send": "Envoyer",
+        "success": "Votre message a été reçu. Bonne journée !",
+        "contact": "Connectez-vous avec moi sur les réseaux sociaux"
+    },
+    "about": {
+        "title": "À PROPOS DE MOI",
+        "question1": "NOM",
+        "answer1": "Oussama Fannah",
+        "question2": "NATIONALITÉ",
+        "answer2": "Marocain",
+        "question3": "PROFESSION",
+        "answer3": "Développeur Full Stack / BackEnd",
+        "question4": "ÉDUCATION",
+        "answer4": "OFPPT - Technicien Spécialisé (programme de 2 ans)",
+        "question5": "COMPÉTENCES",
+        "answer5": "JavaScript, React, Node.js, Php, mySQL, MongoDB, etc...",
+        "question6": "LANGUES",
+        "answer61": "Anglais" ,
+        "answer62": "Francais" ,
+        "answer63": "Arabe" ,
+        "question7": "INTRODUCTION",
+        "answer7": "Développeur Full Stack / BackEnd passionné et dévoué avec une solide base en JavaScript, React et Node.js. Enthousiaste à l'idée d'apprendre et de s'adapter à de nouvelles technologies. Passionné par la création de solutions innovantes et la contribution à la communauté technologique."
+    }
+}

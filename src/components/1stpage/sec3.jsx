@@ -4,8 +4,12 @@ import '../../style/sec3.css';
 import { XTwitter } from "../../assets/svgs/socials/x";
 import { Linkedin } from "../../assets/svgs/socials/linkedin";
 import { Github } from "../../assets/svgs/socials/github";
+import { useTranslation } from 'react-i18next';
 
 const ContactForm = () => {
+  const { t } = useTranslation();
+
+
   const [state, handleSubmit] = useForm('mrgwbejg');
   const [isSuccess, setIsSuccess] = useState(false);
 
@@ -22,7 +26,7 @@ const ContactForm = () => {
     <>
       <div className="sec3" id="contact">
         <div className="title">
-          <p>Let's work together</p>
+          <p>{t('contact.title')}</p>
 
           {/* <div class="container">
             <div class="box">
@@ -43,7 +47,7 @@ const ContactForm = () => {
 
               <div className="form">
                 <div className="form-group">
-                  <label htmlFor="name">Name</label>
+                  <label htmlFor="name">{t('contact.name')}</label>
                   <input
                     required
                     name="name"
@@ -61,7 +65,7 @@ const ContactForm = () => {
                   />
                 </div>
                 <div className="form-group">
-                  <label htmlFor="message">Leave A Message</label>
+                  <label htmlFor="message">{t('contact.msg')}</label>
                   <textarea
                     required
                     cols="50"
@@ -72,14 +76,14 @@ const ContactForm = () => {
                 </div>
                 {isSuccess ? (
                   <div className="succeededmsg">
-                    <p>Your message has been received. Have a great day!</p>
+                    <p>{t('contact.success')}</p>
                   </div>
                 ) : (
                   <button
                     type="submit"
                     className="form-submit-btn"
                   >
-                    Send
+                    {t('contact.send')}
                   </button>
                 )}
               </div>
@@ -95,7 +99,7 @@ const ContactForm = () => {
 
             <div className="social">
 
-              <p>Connect with me on social media!</p>
+              <p>{t('contact.contact')}</p>
               <div className="socials">
                 <a href="https://www.linkedin.com">
                   <Linkedin />
